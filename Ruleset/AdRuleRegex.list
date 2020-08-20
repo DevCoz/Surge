@@ -1,6 +1,6 @@
 # >Advertising Block
-USER-AGENT,*AdSDK*
 USER-AGENT,*Banner*
+USER-AGENT,AliXAdSDK*
 
 # > AD
 DOMAIN,sss.bxmns.com
