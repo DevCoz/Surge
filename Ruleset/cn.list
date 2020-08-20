@@ -1,0 +1,32 @@
+# China Apps
+USER-AGENT,MApi*
+USER-AGENT,WeChat*
+USER-AGENT,MicroMessenger Client
+USER-AGENT,%E4%BC%98%E9%85%B7*
+USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
+# All
+DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,taobao
+DOMAIN-KEYWORD,alicdn
+DOMAIN-KEYWORD,aliyun
+DOMAIN-KEYWORD,iqiyi
+DOMAIN-KEYWORD,baidu
+DOMAIN-KEYWORD,bilibili
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,youku.com
+IP-CIDR,198.11.188.0/25,no-resolve
+IP-CIDR,198.11.136.0/24,no-resolve
+IP-CIDR,182.254.116.0/24,no-resolve
+# Other
+DOMAIN-SUFFIX,zimuzu.tv
+DOMAIN-SUFFIX,zmzapi.com
+DOMAIN-SUFFIX,zmzapi.net
+DOMAIN-SUFFIX,zmzfile.com
+DOMAIN-SUFFIX,520xst.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,biquge.com.tw
+# China
+DOMAIN-SUFFIX,cn

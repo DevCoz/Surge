@@ -1,0 +1,50 @@
+# All
+DOMAIN-SUFFIX,tw
+
+DOMAIN-KEYWORD,jav
+DOMAIN-KEYWORD,porn
+DOMAIN-KEYWORD,github
+DOMAIN-KEYWORD,Reddit
+DOMAIN-KEYWORD,twitter
+DOMAIN-KEYWORD,dropbox
+DOMAIN-KEYWORD,facebook
+DOMAIN-KEYWORD,instagram
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,ampproject.org
+DOMAIN-SUFFIX,letsencrypt.org
+
+# Google
+DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,blogspot
+DOMAIN-SUFFIX,goo.gl
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,appspot.com
+DOMAIN-SUFFIX,blogger.com
+DOMAIN-SUFFIX,getoutline.org
+
+# Pixiv
+DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pximg.net
+
+# Telegram
+DOMAIN-KEYWORD,telegram
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
+IP-CIDR,91.108.4.0/22,no-resolve
+IP-CIDR,91.108.8.0/21,no-resolve
+IP-CIDR,91.108.16.0/21,no-resolve
+IP-CIDR,91.108.36.0/22,no-resolve
+IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,109.239.140.0/24,no-resolve
+IP-CIDR,149.154.160.0/20,no-resolve

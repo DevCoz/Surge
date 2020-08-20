@@ -1,0 +1,9 @@
+#!name=WeChat Mock
+#!desc=WeChat Mock Module
+#!system=ios
+
+[Map Local]
+^https://mp\.weixin\.qq\.com/mp/getappmsgad data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
+
+[MITM]
+hostname = %APPEND% mp.weixin.qq.com
