@@ -1,6 +1,8 @@
 # >Advertising Block
+USER-AGENT,*Splash*
 USER-AGENT,*Banner*
 USER-AGENT,AliXAdSDK*
+USER-AGENT,*SensorsAnalytics*
 
 # AD Block KEYWORD
 DOMAIN-KEYWORD,admarvel
@@ -152,6 +154,7 @@ URL-REGEX,"^https?:\/\/m\.creditcard\.ecitic\.com\/.*\/appStartAdv$"
 
 # > 腾讯视频
 USER-AGENT,*VBQADCommonKit*
+AND,((DOMAIN-KEYWORD,splash), (DOMAIN-KEYWORD,gtimg))
 
 # 淘宝
 URL-REGEX,"^https?:\/\/heic\.alicdn\.com\/.*\.jpg_(9\d{2}|\d{4})"
