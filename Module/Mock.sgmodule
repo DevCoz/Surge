@@ -1,3 +1,7 @@
+#!name=Mock
+#!desc=Mock Module
+#!system=ios
+
 [General]
 force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 
