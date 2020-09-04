@@ -1,0 +1,9 @@
+#!name=Surge Unlock VIP Script Collections
+#!desc=Premium Unlock Scripts
+#!system=ios
+
+[Script]
+Picsew.js = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Picsew.js
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
