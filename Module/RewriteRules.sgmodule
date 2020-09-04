@@ -1,5 +1,5 @@
 #!name= rewrite rules
-#!desc= This module integrate lhie1 rewrite rules
+#!desc= This module integrate rewrite rules
 
 [URL Rewrite]
 
