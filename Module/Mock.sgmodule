@@ -12,15 +12,6 @@ force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 ^https?:\/\/gw\.alicdn\.com\/(t(f|p)s\/.+\d{3,4}-\d{4}|mt) data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.wireless\.home\.splash\.awesome\.get\/ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
 
-// CMB
-^https?:\/\/mlife\.cmbchina\.com\/BaseService\/startAppForV5\.json$ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json$ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/getAdvertisement\.json data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-
-// ICBC
-^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-
 //bilibili
 ^https?:\/\/app\.bilibili\.com\/(pgc/season/rank/cn|x/v2/(rank.*rid=(168|5)|search/(defaultword|hot|recommend|resource))) data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
 ^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
@@ -39,4 +30,4 @@ force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 ^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
 
 [MITM]
-hostname = %APPEND% gw.alicdn.com, *acs.m.taobao.com，mlife.cmbchina.com, resource.cmbchina.com，app.bilibili.com,manga.bilibili.com，interface.music.163.com，mp.weixin.qq.com
+hostname = %APPEND% gw.alicdn.com, *acs.m.taobao.com，app.bilibili.com,manga.bilibili.com，interface.music.163.com，mp.weixin.qq.com
