@@ -1,5 +1,5 @@
 # Current total domain name : 2100+ 
-# Update time : 2020.9.2
+# Update time : 2020.9.10
 
 #pkg=Pixiv
 .mopub.com
