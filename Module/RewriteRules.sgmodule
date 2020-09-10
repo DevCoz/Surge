@@ -20,6 +20,7 @@ app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 heade
 # >> Hupu
 ^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/(interfaceAdMonitor|interfaceAd)\/ - reject
 ^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/status\/init - reject
+^https?:\/\/business\.msstatic\.com\/advertiser\/ - reject
 
 # >> iQiyi
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do - reject
