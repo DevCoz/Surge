@@ -2,7 +2,6 @@
 USER-AGENT,*Splash*
 USER-AGENT,*Banner*
 USER-AGENT,AliXAdSDK*
-USER-AGENT,*SensorsAnalytics*
 
 # AD Block KEYWORD
 DOMAIN-KEYWORD,admarvel
