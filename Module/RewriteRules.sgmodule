@@ -68,7 +68,6 @@ app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 heade
 ^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/ - reject
 
 # >> Ximalaya
-^https?:\/\/adse.+\.com\/[a-z]{4}\/loading\?appid= - reject
 ^https?:\/\/adse\.ximalaya\.com\/ting\/feed\?appid= - reject
 ^https?:\/\/adse\.ximalaya\.com\/ting\/loading\?appid= - reject
 ^https?:\/\/adse\.ximalaya\.com\/ting\?appid= - reject
