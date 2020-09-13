@@ -21,10 +21,7 @@ force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 ^https?:\/\/interface3?\.music\.163\.com\/eapi\/(ad|abtest|sp|hot|log|mlivestream|store|mlog|search/(specialkeyword|defaultkeyword|hot)) data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
 
 //Wechat
-^https?:\/\/.+extshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+report\? data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+ad\? data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+monitor\? data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
+^https://mp\.weixin\.qq\.com/mp/getappmsgad data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
 
 //Youku
 ^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/ data="https://github.com/offwh1te/Surge/raw/master/Mock/empty.json"
