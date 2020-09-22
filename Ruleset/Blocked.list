@@ -17,7 +17,6 @@ DOMAIN-SUFFIX,letsencrypt.org
 
 # Google
 DOMAIN-KEYWORD,google
-DOMAIN-KEYWORD,blogspot
 DOMAIN-SUFFIX,goo.gl
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,gmail.com
@@ -28,11 +27,6 @@ DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,blogger.com
 DOMAIN-SUFFIX,getoutline.org
-
-# Pixiv
-DOMAIN-SUFFIX,pixiv.org
-DOMAIN-SUFFIX,pixiv.net
-DOMAIN-SUFFIX,pximg.net
 
 # Telegram
 DOMAIN-KEYWORD,telegram
