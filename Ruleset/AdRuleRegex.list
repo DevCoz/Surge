@@ -118,3 +118,8 @@ URL-REGEX,"^http:\/\/t00img\.yangkeduo\.com\/goods\/.*\.jpeg\?imageView2\/format
 
 # pixiv
 AND,((USER-AGENT,pixiv*), (NOT,((DOMAIN-KEYWORD,pixiv))))
+
+#! 漫畫人
+URL-REGEX,^http:\/\/mangaapi.manhuaren.com\/.+\/public\/(getShelfActivity|getStartPageAds|getStartPageAds2|getRecommendedGame|getAditem|getAds|getMultiAds|getHome)
+URL-REGEX,^http:\/\/mangaapi.manhuaren.com\/.+\/manga\/getMangaPromotionActivity
+URL-REGEX,^http:\/\/mangaapi.manhuaren.com\/.+\/ad\/
