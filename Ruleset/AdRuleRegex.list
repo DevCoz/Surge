@@ -34,22 +34,7 @@ DOMAIN-KEYWORD,zjtoolbar
 # URL-REGEX
 
 #Privacy
-URL-REGEX,^https?:\/\/(\w+\.)?(adclick|ads([0-9]+)?|adserver|adformat|analysis|banners?|click|counter|log|log-?\w+?|pagead|stat|stats|statis|trace|track|tracking|uniad)\.\w+\.(com|cn|org|info|io|net)
-
-# 中国移动
-URL-REGEX,"^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit$"
-
-# 工商银行
-URL-REGEX,"http:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/"
-
-# 招商银行
-URL-REGEX,"^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/"
-
-# 发现精彩(广发银行)
-URL-REGEX,"^http:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d+\.(jpg|png)$"
-
-# 动卡空间(中信银行)
-URL-REGEX,"^https?:\/\/m\.creditcard\.ecitic\.com\/.*\/appStartAdv$"
+//URL-REGEX,^https?:\/\/(\w+\.)?(adclick|ads([0-9]+)?|adserver|adformat|analysis|banners?|click|counter|log|log-?\w+?|pagead|stat|stats|statis|trace|track|tracking|uniad)\.\w+\.(com|cn|org|info|io|net)
 
 # > 腾讯视频
 USER-AGENT,*VBQADCommonKit*
@@ -63,16 +48,6 @@ IP-CIDR,203.119.175.0/24,no-resolve
 # 高德地图
 DOMAIN,optimus-ads.amap.com
 URL-REGEX,"^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash"
-
-# 饿了么 
-URL-REGEX,"^https?:\/\/cube\.elemecdn\.com\/.*\.mp4\?$"
-
-# 美团外卖
-URL-REGEX,"^http:\/\/p\d\.meituan\.net\/(wmbanner|bizad)\/"
-
-# 美团
-URL-REGEX,"^https?:\/\/s3plus\.meituan\.net\/v\d\/mss_a002"
-URL-REGEX,"^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.*\.jpg(\.webp)?$"
 
 # 网易云音乐
 URL-REGEX,"^http:\/\/[\s\S]*\/eapi\/ad\/"
@@ -94,27 +69,14 @@ URL-REGEX,"^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload
 URL-REGEX,"^https?:\/\/[\s\S]*\.(snssdk|amemv)\.com\/api\/ad\/"
 URL-REGEX,"^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad"
 
-# 虎牙
-URL-REGEX,"^http:\/\/business\.msstatic\.com\/advertiser\/"
-URL-REGEX,"^https?:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/"
-
 # 哔哩哔哩
 URL-REGEX,"^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/"
-
-# 咪咕视频
-URL-REGEX,"^http:\/\/ggx\.cmvideo\.cn\/request\/"
 
 # 芒果TV
 AND,((DOMAIN-SUFFIX,da.mgtv.com), (DOMAIN-KEYWORD,mobile))
 
 # 什么值得买
 URL-REGEX,"^https?:\/\/app-api\.smzdm\.com\/util\/loading"
-
-# 咪咕爱看
-URL-REGEX,"^http:\/\/aikanvod\.miguvideo\.com\/video\/p\/i_(adverseInterface|vodDetailsMainEx)\.jsp"
-
-# 拼多多
-URL-REGEX,"^http:\/\/t00img\.yangkeduo\.com\/goods\/.*\.jpeg\?imageView2\/format\/webp$"
 
 # pixiv
 AND,((USER-AGENT,pixiv*), (NOT,((DOMAIN-KEYWORD,pixiv))))
