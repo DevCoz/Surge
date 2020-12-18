@@ -3,3 +3,5 @@
 2.脚本规则 感谢 Choler wubulaba onewayticket255 primovist等。
 
 Thanks
+
+自用规则。
