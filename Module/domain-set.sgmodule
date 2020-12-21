@@ -2,8 +2,6 @@
 #!desc=Remove ADs
 
 [Rule]
-# DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/adaway.txt,REJECT
-# DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/annoyances-filter.txt,REJECT
 DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/base-filter.txt,REJECT
 DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/chinese-filter.txt,REJECT
 DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/neohosts-full.txt,REJECT
