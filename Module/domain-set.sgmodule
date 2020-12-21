@@ -6,7 +6,7 @@
 # https://github.com/geekdada/surge-list/raw/master/domain-set/annoyances-filter.txt,REJECT
 https://github.com/geekdada/surge-list/raw/master/domain-set/base-filter.txt,REJECT
 https://github.com/geekdada/surge-list/raw/master/domain-set/chinese-filter.txt,REJECT
-# https://github.com/geekdada/surge-list/raw/master/domain-set/neohosts-full.txt,REJECT
-# https://github.com/geekdada/surge-list/raw/master/domain-set/neohosts.txt,REJECT
+https://github.com/geekdada/surge-list/raw/master/domain-set/neohosts-full.txt,REJECT
+https://github.com/geekdada/surge-list/raw/master/domain-set/neohosts.txt,REJECT
 https://github.com/geekdada/surge-list/raw/master/domain-set/social-media-filter.txt,REJECT
 https://github.com/geekdada/surge-list/raw/master/domain-set/tracking-protection-filter.txt,REJECT
