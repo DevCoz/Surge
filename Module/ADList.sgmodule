@@ -1,7 +1,0 @@
-#!name=Remove ADs
-#!desc=Remove ADs
-#!system=ios
-
-[Rule]
-https://github.com/offwh1te/Surge/raw/master/Ruleset/Adblock.list,REJECT
-https://github.com/offwh1te/Surge/raw/master/Ruleset/AdRuleRegex.list,REJECT
