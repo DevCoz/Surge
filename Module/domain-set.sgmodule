@@ -2,9 +2,11 @@
 #!desc=Remove ADs
 
 [Rule]
-https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/base-filter.txt,REJECT
-https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt,REJECT
-https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/neohosts-full.txt,REJECT
-https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/neohosts.txt,REJECT
-https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/social-media-filter.txt,REJECT
-https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/tracking-protection-filter.txt,REJECT
+# DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/adaway.txt,REJECT
+# DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/annoyances-filter.txt,REJECT
+DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/base-filter.txt,REJECT
+DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/chinese-filter.txt,REJECT
+DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/neohosts-full.txt,REJECT
+DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/neohosts.txt,REJECT
+DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/social-media-filter.txt,REJECT
+DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/tracking-protection-filter.txt,REJECT
