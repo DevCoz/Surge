@@ -58,6 +58,7 @@ AND,((OR,((USER-AGENT,NeteaseMusic*),(USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%
 
 # 喜马拉雅
 URL-REGEX,"^http:\/\/[\s\S]*\/ting\/[a-z]*\/ts-\d+"
+URL-REGEX,"^http:\/\/.+\/(soundPatch|ting).*\/ts"
 AND,((USER-AGENT,ting*), (URL-REGEX,(^http:\/\/.+\/soundPatch|ad.*\.ximalaya\.com)))
 
 # 滴滴出行
