@@ -81,7 +81,7 @@ AND,((DOMAIN-SUFFIX,da.mgtv.com), (DOMAIN-KEYWORD,mobile))
 URL-REGEX,"^https?:\/\/app-api\.smzdm\.com\/util\/loading"
 
 # pixiv
-AND,((USER-AGENT,pixiv*), (NOT,((DOMAIN-KEYWORD,pixiv))))
+//AND,((USER-AGENT,pixiv*), (NOT,((DOMAIN-KEYWORD,pixiv))))
 
 #! 漫畫人
 URL-REGEX,^http:\/\/mangaapi.manhuaren.com\/.+\/public\/(getShelfActivity|getStartPageAds|getStartPageAds2|getRecommendedGame|getAditem|getAds|getMultiAds|getHome)
