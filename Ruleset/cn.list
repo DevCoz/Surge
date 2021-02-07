@@ -16,14 +16,7 @@ DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,youku.com
-IP-CIDR,198.11.188.0/25,no-resolve
-IP-CIDR,198.11.136.0/24,no-resolve
-IP-CIDR,182.254.116.0/24,no-resolve
 # Other
-DOMAIN-SUFFIX,zimuzu.tv
-DOMAIN-SUFFIX,zmzapi.com
-DOMAIN-SUFFIX,zmzapi.net
-DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,520xst.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,snssdk.com
