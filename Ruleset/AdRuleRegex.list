@@ -35,16 +35,11 @@ DOMAIN-KEYWORD,zjtoolbar
 # URL-REGEX
 
 #Privacy
-//URL-REGEX,^https?:\/\/(\w+\.)?(adclick|ads([0-9]+)?|adserver|adformat|analysis|banners?|click|counter|log|log-?\w+?|pagead|stat|stats|statis|trace|track|tracking|uniad)\.\w+\.(com|cn|org|info|io|net)
+URL-REGEX,^https?:\/\/(\w+\.)?(adclick|ads([0-9]+)?|adserver|adformat|analysis|banners?|click|counter|log|log-?\w+?|pagead|stat|stats|statis|trace|track|tracking|uniad)\.\w+\.(com|cn|org|info|io|net)
 
 # > 腾讯视频
 USER-AGENT,*VBQADCommonKit*
 AND,((DOMAIN-KEYWORD,splash), (DOMAIN-KEYWORD,gtimg))
-
-# 淘宝
-URL-REGEX,"^https?:\/\/heic\.alicdn\.com\/.*\.jpg_(9\d{2}|\d{4})"
-IP-CIDR,203.119.144.0/21,no-resolve
-IP-CIDR,203.119.175.0/24,no-resolve
 
 # 高德地图
 DOMAIN,optimus-ads.amap.com
@@ -61,29 +56,10 @@ URL-REGEX,"^http:\/\/[\s\S]*\/ting\/[a-z]*\/ts-\d+"
 URL-REGEX,"^http:\/\/.+\/(soundPatch|ting).*\/ts"
 AND,((USER-AGENT,ting*), (URL-REGEX,(^http:\/\/.+\/soundPatch|ad.*\.ximalaya\.com)))
 
-# 滴滴出行
-DOMAIN,ct.xiaojukeji.com
-DOMAIN,gwp.xiaojukeji.com
-URL-REGEX,"^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload)"
-
 # 字节跳动
 # *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
 URL-REGEX,"^https?:\/\/[\s\S]*\.(snssdk|amemv)\.com\/api\/ad\/"
 URL-REGEX,"^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad"
 
-# 哔哩哔哩
-URL-REGEX,"^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/"
-
-# 芒果TV
-AND,((DOMAIN-SUFFIX,da.mgtv.com), (DOMAIN-KEYWORD,mobile))
-
-# 什么值得买
-URL-REGEX,"^https?:\/\/app-api\.smzdm\.com\/util\/loading"
-
 # pixiv
-//AND,((USER-AGENT,pixiv*), (NOT,((DOMAIN-KEYWORD,pixiv))))
-
-#! 漫畫人
-URL-REGEX,^http:\/\/mangaapi.manhuaren.com\/.+\/public\/(getShelfActivity|getStartPageAds|getStartPageAds2|getRecommendedGame|getAditem|getAds|getMultiAds|getHome)
-URL-REGEX,^http:\/\/mangaapi.manhuaren.com\/.+\/manga\/getMangaPromotionActivity
-URL-REGEX,^http:\/\/mangaapi.manhuaren.com\/.+\/ad\/
+AND,((USER-AGENT,pixiv*), (NOT,((DOMAIN-KEYWORD,pixiv))))
