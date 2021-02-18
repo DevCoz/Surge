@@ -1,6 +1,6 @@
 # >Advertising Block
+USER-AGENT,AdSDK*
 USER-AGENT,*Splash*
-USER-AGENT,*Banner*
 USER-AGENT,AliXAdSDK*
 USER-AGENT,FBiOSSDK*
 
