@@ -1,6 +1,6 @@
 #!name= rewrite rules
 #!desc= This module integrate rewrite rules
-
+#!system=ios
 
 [General]
 force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
