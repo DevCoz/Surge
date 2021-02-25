@@ -1,6 +1,9 @@
 #!name= rewrite rules
 #!desc= This module integrate rewrite rules
 
+[General]
+force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
+
 [URL Rewrite]
 
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
@@ -11,22 +14,15 @@ app_name=super&([\S]*)aid=\d+ app_name=super_pro&$1aid=1412 header
 # Remove News_Article's Ad (By Liquor030)
 app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 header
 
-# >> ByteDance
-^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
-^https?:\/\/.+\.pstatp\.com\/img\/ad - reject
-^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/v\d\/ - reject
-^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ - reject
-
 # >> Hupu
 ^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/(interfaceAdMonitor|interfaceAd)\/ - reject
 ^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/status\/init - reject
 ^https?:\/\/business\.msstatic\.com\/advertiser\/ - reject
 
-# >> iQiyi
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do - reject
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
+# > iQIYI - act.vip.iqiyi.com
 ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
-^https?:\/\/t7z\.cupid\.iqiyi\.com\/mixer\? - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
 
 # >> JD
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
@@ -42,75 +38,43 @@ app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 heade
 ^https?:\/\/sp\.kaola\.com\/api\/openad - reject
 ^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json - reject
 
-# >> Tencent Futu Securities
-^https?:\/\/api5\.futunn\.com\/ad\/ - reject
-
-# >> Tencent Game
+# ---(Tencent)---
+# > FUTU - api*.futunn.com
+^https?:\/\/api\.futunn\.com\/v\d\/ad\/ - reject
+^https?:\/\/api\d\.futunn\.com\/ad\/ - reject
+# > Tencent Game - ssl.kohsocialapp.qq.com
+^https?:\/\/ssl\.kohsocialapp\.qq\.com:\d+\/game\/buttons - reject
 ^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
-^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons - reject
-
-# >> Tencent Maps
-^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ - reject
-^https?:\/\/newsso\.map\.qq\.com\/\?&attime= - reject
-
-# >> Tencent News
-^https?:\/\/r\.inews\.qq\.com\/adsBlacklist - reject
-^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic - reject
-^https?:\/\/r\.inews\.qq\.com\/getQQNewsRemoteConfig - reject
-
-# >> Tencent QQLive
-^https?:\/\/.+\.mp4\?cdncode=.+&guid= - reject
-^https?:\/\/.+\.mp4\?cdncode=.+&sdtfrom=v3004 - reject
-^https?:\/\/btrace.qq.com - reject
+# > Tencent Map - 4gimg.map.qq.com
+^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
+# > Tencent Video
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 - reject
+^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+_p20\d_ - reject
+# > Tencent News - r.inews.qq.com
+^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) - reject
+# > Tencent Sports - news.ssp.qq.com
+^https?:\/\/news\.ssp\.qq\.com\/app - reject
+# > Tencent Music
+^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
+# > Tencent WeChat - mp.weixin.qq.com
+# ^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement) - reject
+# ---
+# > TuNiu - m.tuniu.com
+^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/ - reject
+# > TVBCLive - mob.mddcloud.com
+^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
 
-# >> Thunder
-^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/ - reject
-
-# >> Ximalaya
-^https?:\/\/adse\.ximalaya\.com\/ting\/feed\?appid= - reject
-^https?:\/\/adse\.ximalaya\.com\/ting\/loading\?appid= - reject
-^https?:\/\/adse\.ximalaya\.com\/ting\?appid= - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group21\/M03\/E7\/3F\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group21\/M0A\/95\/3B\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group22\/M00\/92\/FF\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group22\/M05\/66\/67\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group22\/M07\/76\/54\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group23\/M01\/63\/F1\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group23\/M04\/E5\/F6\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group23\/M07\/81\/F6\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group23\/M0A\/75\/AA\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group24\/M03\/E6\/09\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group24\/M07\/C4\/3D\/ - reject
-^https?:\/\/fdfs\.xmcdn\.com\/group25\/M05\/92\/D1\/ - reject
-
-# >> YOUKU
-^https?:\/\/.+\.mp4\?ccode=0902 - reject
-^https?:\/\/.+\.mp4\?sid= - reject
-
-# >> 淘宝
-^https?:\/\/gw.alicdn.com\/tfs\/.+-1125-1602 - reject
-
-# >> 豆瓣
-^https?:\/\/(\d{1,3}.){1,3}\d{1,3}\/view\/dale-online\/dale_ad\/ - reject
-^https?:\/\/api.douban.com\/v2\/app_ads\/common_ads - reject
-^https?:\/\/frodo.douban.com\/api\/v2\/movie\/banner - reject
-^https?:\/\/img\d.doubanio.com\/view\/dale-online\/dale_ad\/ - reject
-
-# >> 饿了么
-^https?:\/\/elemecdn.com\/.+\/sitemap - reject
-^https?:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} - reject
-^https?:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} - reject
-^https?:\/\/fuss10.elemecdn.com\/.+.mp4 - reject
-^https?:\/\/m.elecfans.com\/static\/js\/ad.js - reject
-^https?:\/\/www1.elecfans.com\/www\/delivery\/ - reject
-
+# > eleme - cube.elemecdn.com
+^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/ - reject
+^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/ - reject
+^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\? - reject
 
 # >> 人人视频
 ^https?:\/\/img.rr.tv\/banner\/.+.jpg - reject
-
-# >> 人人影视
-^https?:\/\/ctrl.(playcvn|zmzapi).net\/app\/(ads|init) - reject
 
 # > Other
 ^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad - reject
