@@ -1,6 +1,7 @@
 #!name= rewrite rules
 #!desc= This module integrate rewrite rules
 
+
 [General]
 force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
 
@@ -25,7 +26,6 @@ app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 heade
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
 
 # >> NetEase
-^https?:\/\/.+\/eapi\/(ad|log)\/ - reject
 ^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds - reject
 ^https?:\/\/c\.m\.163\.com\/nc\/gl\/ - reject
 ^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\? - reject
