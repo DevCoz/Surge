@@ -23,6 +23,8 @@ force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.5
 ^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json - reject
 
 # ---(Tencent)---
+# >> 微信
+^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) - reject
 # > FUTU - api*.futunn.com
 ^https?:\/\/api\.futunn\.com\/v\d\/ad\/ - reject
 ^https?:\/\/api\d\.futunn\.com\/ad\/ - reject
