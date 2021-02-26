@@ -9,17 +9,6 @@ force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.5
 
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
-# Remove Super's Ad (By Liquor030)
-app_name=super&([\S]*)aid=\d+ app_name=super_pro&$1aid=1412 header
-
-# Remove News_Article's Ad (By Liquor030)
-app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 header
-
-# >> Hupu
-^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/(interfaceAdMonitor|interfaceAd)\/ - reject
-^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/status\/init - reject
-^https?:\/\/business\.msstatic\.com\/advertiser\/ - reject
-
 # > iQIYI - act.vip.iqiyi.com
 ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do - reject
