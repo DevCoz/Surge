@@ -23,44 +23,25 @@ force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.5
 ^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json - reject
 
 # ---(Tencent)---
-# >> 微信
-^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) - reject
-# > FUTU - api*.futunn.com
-^https?:\/\/api\.futunn\.com\/v\d\/ad\/ - reject
-^https?:\/\/api\d\.futunn\.com\/ad\/ - reject
 # > Tencent Game - ssl.kohsocialapp.qq.com
 ^https?:\/\/ssl\.kohsocialapp\.qq\.com:\d+\/game\/buttons - reject
 ^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
-# > Tencent Map - 4gimg.map.qq.com
-^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 # > Tencent Video
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 - reject
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+_p20\d_ - reject
-# > Tencent News - r.inews.qq.com
-^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) - reject
-# > Tencent Sports - news.ssp.qq.com
-^https?:\/\/news\.ssp\.qq\.com\/app - reject
 # > Tencent Music
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
 # > Tencent WeChat - mp.weixin.qq.com
-# ^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement) - reject
-# ---
-# > TuNiu - m.tuniu.com
-^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/ - reject
-# > TVBCLive - mob.mddcloud.com
-^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) - reject
 
 # > eleme - cube.elemecdn.com
 ^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/ - reject
 ^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/ - reject
 ^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\? - reject
-
-# >> 人人视频
-^https?:\/\/img.rr.tv\/banner\/.+.jpg - reject
 
 # > Other
 ^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad - reject
