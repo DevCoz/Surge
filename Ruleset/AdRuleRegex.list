@@ -1,5 +1,4 @@
 # >Advertising Block
-USER-AGENT,*Splash*
 USER-AGENT,AliXAdSDK*
 USER-AGENT,FBiOSSDK*
 
