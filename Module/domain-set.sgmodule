@@ -2,7 +2,6 @@
 #!desc=Block Advertising for Surge iOS
 
 [Rule]
-
 DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt,DIRECT
 DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/adaway.txt,REJECT
 DOMAIN-SET,https://github.com/geekdada/surge-list/raw/master/domain-set/annoyances-filter.txt,REJECT
