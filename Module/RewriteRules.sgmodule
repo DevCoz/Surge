@@ -6,7 +6,6 @@
 force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
 
 [URL Rewrite]
-
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 # >> NetEase
