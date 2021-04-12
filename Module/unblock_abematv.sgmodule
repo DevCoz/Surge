@@ -9,4 +9,4 @@
 AbemaTV PC=http-response https://abema.tv/.* requires-body=1,max-size=-1,script-path=https://ruleset.dev/surge3_abematv_web,script-update-interval=86400
 
 [MITM]
-hostname = %INSERT% www.google.cn,api.abema.io
+hostname = %APPEND% api.abema.io
