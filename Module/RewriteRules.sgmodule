@@ -1,30 +1,19 @@
 #!name= rewrite rules
-#!desc= This module integrate rewrite rules
+#!desc= rewrite rules module.
 #!system=ios
 
 [General]
-force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
+force-http-engine-hosts =  %APPEND% 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52,220.112*,211.162*,124.193*,124.14*,119.79*
+
+[Rule]
+DOMAIN,video-ad.sm.cn,REJECT-DROP
+DOMAIN,api.cupid.dns.iqiyi.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
 
 [URL Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
-# >> NetEase
-^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds - reject
-^https?:\/\/c\.m\.163\.com\/nc\/gl\/ - reject
-^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\? - reject
-^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish - reject
-^https?:\/\/sp\.kaola\.com\/api\/openad - reject
-^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json - reject
-
-# ---(Tencent)---
-# > Tencent WeChat - mp.weixin.qq.com
-^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) - reject
-
-# > eleme - cube.elemecdn.com
-^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/ - reject
-^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/ - reject
-^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\? - reject
-
 # > Other
-^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad - reject
 ^https?:\/\/oset-api\.open-adx\.com\/ad\/ - reject
+^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad - reject
+http://(\d{1,3}\.){3}\d{1,3}/(variety|vlive\.qqvideo)\.tc\.qq\.com/ - reject
