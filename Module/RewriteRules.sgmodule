@@ -2,18 +2,9 @@
 #!desc= rewrite rules module.
 #!system=ios
 
-[General]
-force-http-engine-hosts =  %APPEND% 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52,220.112*,211.162*,124.193*,124.14*,119.79*
-
-[Rule]
-DOMAIN,video-ad.sm.cn,REJECT-DROP
-DOMAIN,api.cupid.dns.iqiyi.com,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
-
 [URL Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 # > Other
 ^https?:\/\/oset-api\.open-adx\.com\/ad\/ - reject
 ^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad - reject
-http://(\d{1,3}\.){3}\d{1,3}/(variety|vlive\.qqvideo)\.tc\.qq\.com/ - reject
