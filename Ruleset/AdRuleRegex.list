@@ -1,11 +1,4 @@
 # >Advertising Block
-USER-AGENT,*AdSDK*
-USER-AGENT,*Splash*
-USER-AGENT,*Banner*
-USER-AGENT,FBiOSSDK*
-USER-AGENT,AliXAdSDK*
-USER-AGENT,*SensorsAnalytics*
-
 # AD Block KEYWORD
 DOMAIN-KEYWORD,adashx
 DOMAIN-KEYWORD,admarvel
@@ -91,10 +84,5 @@ AND,((OR,((USER-AGENT,NeteaseMusic*),(USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%
 URL-REGEX,"^http:\/\/[\s\S]*\/ting\/[a-z]*\/ts-\d+"
 URL-REGEX,"^http:\/\/.+\/(soundPatch|ting).*\/ts"
 AND,((USER-AGENT,ting*), (URL-REGEX,(^http:\/\/.+\/soundPatch|ad.*\.ximalaya\.com)))
-
-# > 字节跳动
-# *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
-URL-REGEX,"^https?:\/\/[\s\S]*\.(snssdk|amemv)\.com\/api\/ad\/"
-URL-REGEX,"^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad"
 
 # > IP-CIDR
