@@ -9,5 +9,10 @@
 ^https?:\/\/oset-api\.open-adx\.com\/ad\/ - reject
 ^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad - reject
 
+[Map Local]
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+ad\? data="https://github.com/DevCoz/Ruleset/raw/master/Mock/empty.json"
+^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/ data="https://github.com/DevCoz/Ruleset/raw/master/Mock/reject-200.txt"
+
+
 [MITM]
-hostname = %APPEND% sf?-ttcdn-tos.pstatp.com, *.snssdk.com, api-access.pangolin-sdk-toutiao.com, google.com
+hostname = %APPEND% sf?-ttcdn-tos.pstatp.com, *.snssdk.com, mp.weixin.qq.com, google.com
