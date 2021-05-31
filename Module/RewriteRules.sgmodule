@@ -1,5 +1,5 @@
-#!name= rewrite rules
-#!desc= rewrite rules module.
+#!name= Rewrite
+#!desc= Rewrite rules module.
 #!system=ios
 
 [URL Rewrite]
@@ -8,3 +8,6 @@
 # > Other
 ^https?:\/\/oset-api\.open-adx\.com\/ad\/ - reject
 ^https?:\/\/sf.*-ttcdn-tos\.pstatp\.com\/obj\/ad - reject
+
+[MITM]
+hostname = %APPEND% sf?-ttcdn-tos.pstatp.com, *.snssdk.com, api-access.pangolin-sdk-toutiao.com, google.com
