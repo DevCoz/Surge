@@ -15,4 +15,4 @@
 
 
 [MITM]
-hostname = %APPEND% sf?-ttcdn-tos.pstatp.com, *.snssdk.com, mp.weixin.qq.com, google.com
+hostname = %APPEND% sf?-ttcdn-tos.pstatp.com, *.snssdk.com, mp.weixin.qq.com, www.google.cn
