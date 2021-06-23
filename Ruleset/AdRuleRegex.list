@@ -65,11 +65,6 @@ DOMAIN-KEYWORD,zjtoolbar
 # Privacy
 URL-REGEX,^https?:\/\/(\w+\.)?(adclick|ads([0-9]+)?|adserver|adformat|analysis|banners?|click|counter|log|log-?\w+?|pagead|stat|stats|statis|trace|track|tracking|uniad)\.\w+\.(com|cn|org|info|io|net)
 
-# > 腾讯视频
-USER-AGENT,TencentConnect*
-USER-AGENT,*VBQADCommonKit*
-AND,((DOMAIN-KEYWORD,splash), (DOMAIN-KEYWORD,gtimg))
-
 # > 高德地图
 DOMAIN,optimus-ads.amap.com
 URL-REGEX,"^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash"
@@ -85,4 +80,17 @@ URL-REGEX,"^http:\/\/[\s\S]*\/ting\/[a-z]*\/ts-\d+"
 URL-REGEX,"^http:\/\/.+\/(soundPatch|ting).*\/ts"
 AND,((USER-AGENT,ting*), (URL-REGEX,(^http:\/\/.+\/soundPatch|ad.*\.ximalaya\.com)))
 
-# > IP-CIDR
+# > ByteDance
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN,ad.toutiao.com
+DOMAIN,toblog.ctobsnssdk.com
+
+# > HappyCast
+DOMAIN,ad.hpplay.cn
+DOMAIN,adc.hpplay.cn
+DOMAIN,adcdn.hpplay.cn
+DOMAIN,adeng.hpplay.cn
+DOMAIN,rp.hpplay.cn
+DOMAIN,rpt.hpplay.cn
+DOMAIN,pangolin.snssdk.com
