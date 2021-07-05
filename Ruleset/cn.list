@@ -16,6 +16,23 @@ DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,youku.com
+# WeChat
+DOMAIN,slife.xy-asia.com
+DOMAIN,dldir1.qq.com
+DOMAIN,wx.tenpay.com
+DOMAIN,weixin110.qq.com
+DOMAIN,wxapp.tc.qq.com
+DOMAIN-SUFFIX,map.qq.com
+DOMAIN-SUFFIX,wx.gtimg.com
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
+
 # Other
 DOMAIN-SUFFIX,520xst.com
 DOMAIN-SUFFIX,pstatp.com
